@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ik project</title>
+  <meta name="description" content="Music releases, studio production and web projects by Gera D.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Gera D</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h1 id="projects-title">Projects</h1>
+        <p class="lede">Releases, studio work and web apps. Links are placeholders: swap in your real streaming and GitHub URLs.</p>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="art art-1" role="img" aria-label="Album artwork placeholder for Midnight Lagos">Midnight Lagos</div>
+            <div class="body">
+              <span class="tag">Single release</span>
+              <h2>Midnight Lagos</h2>
+              <p>An original afro-fusion single written, recorded and produced in my home studio. Layered vocal harmonies sit over a warm bassline and live percussion, mixed for late-night listening.</p>
+              <div class="links">
+                <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Stream on Spotify</a>
+                <a href="https://audiomack.com/" target="_blank" rel="noopener noreferrer">Audiomack</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art-2" role="img" aria-label="Album artwork placeholder for Quiet Hours acoustic EP">Quiet Hours</div>
+            <div class="body">
+              <span class="tag">Acoustic EP</span>
+              <h2>Quiet Hours</h2>
+              <p>A four-song acoustic project recorded with a single condenser microphone and a guitar. Minimal arrangements keep the lyrics and the room sound front and centre.</p>
+              <div class="links">
+                <a href="https://music.apple.com/" target="_blank" rel="noopener noreferrer">Apple Music</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Watch sessions</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art-3" role="img" aria-label="Graphic placeholder for studio production highlights">Studio Sessions</div>
+            <div class="body">
+              <span class="tag">Production work</span>
+              <h2>Studio Sessions: vocal production</h2>
+              <p>Production highlights for other artists: vocal tracking, comping and tuning, arrangement ideas, and a final mix delivered with stems for distribution.</p>
+              <div class="links">
+                <a href="https://soundcloud.com/" target="_blank" rel="noopener noreferrer">Hear samples on SoundCloud</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art-4" role="img" aria-label="Screenshot placeholder for the Studio Planner web app">Studio Planner</div>
+            <div class="body">
+              <span class="tag">Web app</span>
+              <h2>Academic and Studio Planner</h2>
+              <p>A task manager built with vanilla JavaScript. Add assignments, studio sessions and release deadlines, mark them complete, and delete them. It is the planner on this very site.</p>
+              <div class="links">
+                <a href="planner.html">Try it live</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Gera D. All rights reserved.</p>
+      <p>Built for COS 106 Introduction to Web Technologies, MIVA Open University.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

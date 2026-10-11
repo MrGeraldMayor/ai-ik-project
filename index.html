@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ik project</title>
+  <meta name="description" content="Gera D is a music producer, songwriter and recording artist who also builds websites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Ik</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-title">Ikechukwu adiegwu Tony</h1>
+          <p class="headline">I write songs, produce records, and build the websites that carry them.</p>
+          <p class="lede">I'm a recording artist and student at MIVA Open University. I track vocals on a condenser mic, shape the mix in a DAW, and use HTML, CSS and JavaScript to give my music a home on the web.</p>
+          <div class="btn-row">
+            <a class="btn" href="projects.html">Listen to my work</a>
+            <a class="btn ghost" href="contact.html">Book a session</a>
+          </div>
+        </div>
+        <figure class="portrait" style="margin:0">
+          <img src="./assests/cropped_circle_image.png" alt="Portrait of Gera D" width="340" height="340">
+          <span class="initials" aria-hidden="true">GD</span>
+        </figure>
+      </div>
+    </section>
+
+ 
+
+    <section class="section" aria-labelledby="overview-title">
+      <div class="container">
+        <h2 id="overview-title">What I do</h2>
+        <div class="overview">
+          <article class="music">
+            <h3>Musical style</h3>
+            <p>Warm, melodic songwriting with acoustic roots. I start with a guitar or keys, write the hook, then layer vocals and percussion until the song feels finished.</p>
+            <p>Think late-night soul, afro-fusion grooves and stripped acoustic sessions.</p>
+          </article>
+          <article class="web">
+            <h3>Web development</h3>
+            <p>Semantic HTML, responsive CSS and vanilla JavaScript. This site is my COS 106 project.</p>
+          </article>
+          <article class="prod">
+            <h3>Production skills</h3>
+            <p>Recording, arrangement, mixing and sound design in a digital audio workstation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Gera D. All rights reserved.</p>
+      <p>Built for COS 106 Introduction to Web Technologies, MIVA Open University.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

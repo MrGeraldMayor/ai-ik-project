@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planner | Gera D</title>
+  <meta name="description" content="Plan assignments, studio sessions and release deadlines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Gera D</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="planner-title">
+      <div class="container">
+        <h1 id="planner-title">Academic and studio planner</h1>
+        <p class="lede">Keep coursework, recording sessions and release dates in one list. Tasks stay saved in this browser.</p>
+
+        <form id="task-form" class="task-form" novalidate>
+          <div>
+            <label for="task-title">Task</label>
+            <input type="text" id="task-title" name="title" placeholder="e.g. Record bridge vocals">
+            <p class="field-error" id="task-title-error" aria-live="polite"></p>
+          </div>
+          <div>
+            <label for="task-type">Type</label>
+            <select id="task-type" name="type">
+              <option value="assignment">Assignment</option>
+              <option value="studio">Studio session</option>
+              <option value="release">Release deadline</option>
+            </select>
+            <p class="field-error"></p>
+          </div>
+          <div>
+            <label for="task-due">Due date</label>
+            <input type="date" id="task-due" name="due">
+            <p class="field-error"></p>
+          </div>
+          <button type="submit" class="btn">Add task</button>
+        </form>
+
+        <div class="planner-status">
+          <span id="task-count" aria-live="polite">0 of 0 done</span>
+          <span>Tick a task to mark it done.</span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden" style="position:absolute;left:-9999px">Task list</caption>
+            <thead>
+              <tr>
+                <th scope="col">Done</th>
+                <th scope="col">Task</th>
+                <th scope="col">Type</th>
+                <th scope="col">Due</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="task-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Gera D. All rights reserved.</p>
+      <p>Built for COS 106 Introduction to Web Technologies, MIVA Open University.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

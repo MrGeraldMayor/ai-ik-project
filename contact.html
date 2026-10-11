@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Gera D</title>
+  <meta name="description" content="Get in touch with Gera D to book a studio session, collaborate on a song or ask about web projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="file.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Ik</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h1 id="contact-title">Let's talk</h1>
+          <p class="lede">Want to book a studio session, collaborate on a song, or have a website built? Send a message and I'll reply within two to three days.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email</strong><a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li><strong>Phone / WhatsApp</strong><a href="tel:+2347035359582">+234 703 535 9582</a></li>
+            <li><strong>Find me online</strong>
+              <a href="https://github.com/IkechukwuTony" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="c-name">Full name</label>
+            <input type="text" id="c-name" name="name" autocomplete="name" placeholder="Your name">
+            <p class="field-error" id="c-name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" name="email" autocomplete="email" placeholder="you@example.com">
+            <p class="field-error" id="c-email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-phone">Phone <span class="hint">(optional)</span></label>
+            <input type="tel" id="c-phone" name="phone" autocomplete="tel" placeholder="+234 000 000 0000">
+            <p class="field-error" id="c-phone-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-subject">Reason for contact</label>
+            <select id="c-subject" name="subject">
+              <option value="">Choose one...</option>
+              <option value="collab">Collaboration</option>
+              <option value="web">Web development enquiry</option>
+              <option value="other">Something else</option>
+            </select>
+            <p class="field-error" id="c-subject-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-message">Message <span class="hint" id="c-count">0 / 500</span></label>
+            <textarea id="c-message" name="message" rows="6" maxlength="500" placeholder="Tell me about your project..."></textarea>
+            <p class="field-error" id="c-message-error" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn">Send message</button>
+          <div class="form-success" id="form-success" role="status">Thanks! Your message has been received. I'll get back to you soon.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 ikechukwu. All rights reserved.</p>
+      <p>Built for COS 106 Introduction to Web Technologies, MIVA Open University.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
